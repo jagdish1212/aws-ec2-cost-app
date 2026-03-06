@@ -1,0 +1,40 @@
+###############################################################################  
+# AWS Cost Audit Script — .gitignore  
+###############################################################################  
+  
+# ── Audit log files (SENSITIVE — contain account metadata) ──────────────────  
+aws-audit-*.log  
+*.log  
+  
+# ── AWS credentials and config (safety net) ─────────────────────────────────  
+.aws/  
+*credentials*  
+*.pem  
+*.key  
+*.pfx  
+*.p12  
+  
+# ── Environment files that may contain secrets ──────────────────────────────  
+.env  
+.env.*  
+*.env  
+  
+# ── OS generated files ─────────────────────────────────────────────────────  
+.DS_Store  
+.DS_Store?  
+Thumbs.db  
+Desktop.ini  
+  
+# ── Editor and IDE files ───────────────────────────────────────────────────  
+.vscode/  
+.idea/  
+*.swp  
+*.swo  
+*~  
+.project  
+.settings/  
+  
+# ── Temporary files ────────────────────────────────────────────────────────  
+*.tmp  
+*.bak  
+*.orig  
