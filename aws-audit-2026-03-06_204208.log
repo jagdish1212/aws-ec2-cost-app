@@ -1,0 +1,1335 @@
+
+[0;34m==========================================[0m
+[0;34m  AWS FULL COST AUDIT v5.0[0m
+[0;34m==========================================[0m
+Date: Fri Mar  6 20:42:08 GMT 2026
+
+[0;34m==========================================[0m
+[0;34m  PRE-FLIGHT CHECKS[0m
+[0;34m==========================================[0m
+[0;32m✅ AWS CLI found: aws-cli/2.34.3 Python/3.13.11 Linux/6.6.87.2-microsoft-standard-WSL2 exe/x86_64.ubuntu.24[0m
+[0;32m✅ Authenticated as: arn:aws:iam::365976223374:user/eks-admin[0m
+[0;32m   Account: 365976223374[0m
+[0;32m✅ Basic permissions verified[0m
+
+📝 Logging to: aws-audit-2026-03-06_204208.log
+⏱️  Started at: Fri Mar  6 20:42:12 GMT 2026
+
+[0;34m==========================================[0m
+[0;34m  CURRENT MONTH COSTS (Cost Explorer)[0m
+[0;34m==========================================[0m
+--------------------------------------------------
+|                 GetCostAndUsage                |
++------------------------------------------------+
+||               GroupDefinitions               ||
+|+--------------------+-------------------------+|
+||         Key        |          Type           ||
+|+--------------------+-------------------------+|
+||  SERVICE           |  DIMENSION              ||
+|+--------------------+-------------------------+|
+||                 ResultsByTime                ||
+|+----------------------------------------------+|
+||                   Estimated                  ||
+|+----------------------------------------------+|
+||  True                                        ||
+|+----------------------------------------------+|
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  AWS Data Transfer                       ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------------+------------+||||
+|||||          Amount           |   Unit     |||||
+||||+---------------------------+------------+||||
+|||||  -0.0000011243            |  USD       |||||
+||||+---------------------------+------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  AWS Glue                                ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------+------------------+||||
+|||||       Amount        |      Unit        |||||
+||||+---------------------+------------------+||||
+|||||  0                  |  USD             |||||
+||||+---------------------+------------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  AWS Key Management Service              ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------+------------------+||||
+|||||       Amount        |      Unit        |||||
+||||+---------------------+------------------+||||
+|||||  0                  |  USD             |||||
+||||+---------------------+------------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  AWS Secrets Manager                     ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------+------------------+||||
+|||||       Amount        |      Unit        |||||
+||||+---------------------+------------------+||||
+|||||  0                  |  USD             |||||
+||||+---------------------+------------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  EC2 - Other                             ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+--------------------------+-------------+||||
+|||||          Amount          |    Unit     |||||
+||||+--------------------------+-------------+||||
+|||||  0.0000010886            |  USD        |||||
+||||+--------------------------+-------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  Amazon Elastic Compute Cloud - Compute  ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+--------------------------+-------------+||||
+|||||          Amount          |    Unit     |||||
+||||+--------------------------+-------------+||||
+|||||  0.0000000001            |  USD        |||||
+||||+--------------------------+-------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  Amazon Simple Notification Service      ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------+------------------+||||
+|||||       Amount        |      Unit        |||||
+||||+---------------------+------------------+||||
+|||||  0                  |  USD             |||||
+||||+---------------------+------------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  Amazon Simple Queue Service             ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------+------------------+||||
+|||||       Amount        |      Unit        |||||
+||||+---------------------+------------------+||||
+|||||  0                  |  USD             |||||
+||||+---------------------+------------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  Amazon Simple Storage Service           ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+--------------------------+-------------+||||
+|||||          Amount          |    Unit     |||||
+||||+--------------------------+-------------+||||
+|||||  0.0000000355            |  USD        |||||
+||||+--------------------------+-------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  Amazon Virtual Private Cloud            ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------+------------------+||||
+|||||       Amount        |      Unit        |||||
+||||+---------------------+------------------+||||
+|||||  0                  |  USD             |||||
+||||+---------------------+------------------+||||
+|||                   Groups                   |||
+||||                   Keys                   ||||
+|||+------------------------------------------+|||
+||||  Tax                                     ||||
+|||+------------------------------------------+|||
+||||                  Metrics                 ||||
+|||+------------------------------------------+|||
+|||||              UnblendedCost             |||||
+||||+---------------------+------------------+||||
+|||||       Amount        |      Unit        |||||
+||||+---------------------+------------------+||||
+|||||  0                  |  USD             |||||
+||||+---------------------+------------------+||||
+|||                 TimePeriod                 |||
+||+---------------------+----------------------+||
+|||         End         |        Start         |||
+||+---------------------+----------------------+||
+|||  2026-03-06         |  2026-03-01          |||
+||+---------------------+----------------------+||
+
+[0;34m==========================================[0m
+[0;34m  S3 BUCKETS (Global)[0m
+[0;34m==========================================[0m
+[0;32m  ✅ None found[0m
+
+[0;34m==========================================[0m
+[0;34m  FETCHING ENABLED REGIONS[0m
+[0;34m==========================================[0m
+Found 17 regions to scan
+
+[0;34m[1/17] Scanning ap-south-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: ap-south-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[2/17] Scanning eu-north-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: eu-north-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[3/17] Scanning eu-west-3...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: eu-west-3[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[4/17] Scanning eu-west-2...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: eu-west-2[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[5/17] Scanning eu-west-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: eu-west-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[6/17] Scanning ap-northeast-3...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: ap-northeast-3[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[7/17] Scanning ap-northeast-2...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: ap-northeast-2[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[8/17] Scanning ap-northeast-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: ap-northeast-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[9/17] Scanning ca-central-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: ca-central-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[10/17] Scanning sa-east-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: sa-east-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[11/17] Scanning ap-southeast-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: ap-southeast-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[12/17] Scanning ap-southeast-2...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: ap-southeast-2[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[13/17] Scanning eu-central-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: eu-central-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[14/17] Scanning us-east-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: us-east-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[15/17] Scanning us-east-2...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: us-east-2[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[16/17] Scanning us-west-1...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: us-west-1[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m[17/17] Scanning us-west-2...[0m
+
+[0;34m==========================================[0m
+[0;34m  REGION: us-west-2[0m
+[0;34m==========================================[0m
+[1;33m--- EC2 Instances (Running/Stopped) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lambda Functions ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EKS Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Lightsail Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SageMaker Endpoints ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Volumes ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- EBS Snapshots (Owned by you) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Custom AMIs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ECR Repositories ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Instances ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- RDS Manual Snapshots ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- DynamoDB Tables ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- ElastiCache Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Redshift Clusters ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- OpenSearch Domains ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Elastic IPs ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- NAT Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Load Balancers (ALB/NLB) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Classic Load Balancers ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPC Endpoints (Interface type) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Transit Gateways ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- VPN Connections ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SNS Topics ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- SQS Queues ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Kinesis Streams ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudWatch Log Groups (with stored data) ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- Secrets Manager ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- KMS Customer Managed Keys ---[0m
+[0;32m  ✅ None found[0m
+[1;33m--- CloudFormation Stacks ---[0m
+[0;32m  ✅ None found[0m
+
+[0;34m==========================================[0m
+[0;34m           AUDIT SUMMARY                  [0m
+[0;34m==========================================[0m
+
+⏱️  Duration: 15m 7s
+📝 Log file: aws-audit-2026-03-06_204208.log
+
+[0;32m✅ No chargeable resources found! Your account looks clean.[0m
+
+[0;34m==========================================[0m
+[0;34m  RECOMMENDED NEXT STEPS                  [0m
+[0;34m==========================================[0m
+
+1. Review log: less aws-audit-2026-03-06_204208.log
+2. Cost Explorer: https://console.aws.amazon.com/cost-management/home
+3. Delete unwanted resources
+4. Set up Budgets: https://console.aws.amazon.com/billing/home#/budgets
+
